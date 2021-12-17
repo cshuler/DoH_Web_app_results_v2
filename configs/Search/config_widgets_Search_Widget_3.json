@@ -1,0 +1,52 @@
+{
+  "allPlaceholder": "Enter address or 9 digit TMK",
+  "showInfoWindowOnSelect": true,
+  "sources": [
+    {
+      "layerId": "17a3fd77dda-layer-33",
+      "url": "https://services1.arcgis.com/x4h61KaW16vFs7PM/arcgis/rest/services/tmk_state_shp/FeatureServer/0",
+      "name": "Tmk state shp",
+      "placeholder": "",
+      "searchFields": [
+        "TMK_txt"
+      ],
+      "displayField": "FID",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "panToScale": false,
+      "zoomScale": null,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "type": "query"
+    },
+    {
+      "url": "http://geodata.hawaii.gov/arcgis/rest/services/Geocoding/USA/GeocodeServer",
+      "name": "Hawaii Geocoder - No Cost - Use First",
+      "singleLineFieldName": "SingleLine",
+      "placeholder": "Find address or place",
+      "countryCode": "",
+      "panToScale": false,
+      "zoomScale": null,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "searchInCurrentMapExtent": false,
+      "enableLocalSearch": false,
+      "localSearchMinScale": 300000,
+      "localSearchDistance": 50000,
+      "radiusUnit": "meter",
+      "type": "locator"
+    },
+    {
+      "name": "ArcGIS World Geocoding Service",
+      "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+      "singleLineFieldName": "SingleLine",
+      "placeholder": "Find address or place",
+      "maxResults": 6,
+      "searchInCurrentMapExtent": false,
+      "type": "locator",
+      "enableLocalSearch": true,
+      "localSearchMinScale": 300000,
+      "localSearchDistance": 50000
+    }
+  ]
+}
